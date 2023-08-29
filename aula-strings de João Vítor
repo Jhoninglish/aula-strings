@@ -1,0 +1,62 @@
+//trabalho 9
+//João Vítor da Silva Rosa
+/*
+1.resposta:O código serve para criar arrays, no código ele criou uma array com números até 13
+e depois adicionou mais um número a array. Depois deu um valor constante para aparecer no console.
+
+2.resposta:O valor será que toda a frase mudará para letras maiusculas, também toda a letra A
+será substituida por I.
+
+//3.resposta:
+const nome = prompt("Nome de usuario");
+const email = prompt("Digite seu email");
+console.log("o email " + email + " foi cadastrado com sucesso. " + nome + " seja bem-vindo(a)! ");
+
+//4.resposta:
+let arrayComidas = ["lasanha","salada","hamburger","pizza","sorvete"];
+console.log("Essas são as minhas comidas preferidas:");
+console.log(arrayComidas[0]);
+console.log(arrayComidas[1]);
+console.log(arrayComidas[2]);
+console.log(arrayComidas[3]);
+console.log(arrayComidas[4]);
+
+//5.resposta:
+let listaDeTarefas = [];
+
+// Passo (b)
+for (let i = 0; i < 3; i++) {
+  let tarefa = prompt(`Digite a tarefa ${i + 1}:`);
+  listaDeTarefas.push(tarefa);
+}
+
+// Passo (c)
+console.log("Lista de Tarefas:", listaDeTarefas);
+
+// Passo (d)
+let indiceRealizada = parseInt(prompt("Digite o índice de uma tarefa que você já realizou (0, 1 ou 2):"));
+
+// Verifica se o índice é válido
+if (indiceRealizada >= 0 && indiceRealizada < listaDeTarefas.length) {
+  console.log(`Você realizou a tarefa: ${listaDeTarefas[indiceRealizada]}`);
+} else 
+  console.log("Índice inválido.");
+  */
+
+//Desafio:
+function fraseParaArray(frase) {
+    var palavras = frase.split(' ');
+    return palavras;
+}
+
+var frase = prompt("Digite uma frase: ");
+var resultado = fraseParaArray(frase);
+console.log(resultado);
+
+var frutas = ["Banana", "Morango", "Abacaxi", "Laranja", "Ameixa"];
+
+var indiceAbacaxi = frutas.indexOf("Abacaxi");
+var tamanhoArray = frutas.length; 
+
+console.log("Índice de 'Abacaxi':", indiceAbacaxi);
+console.log("Tamanho do array:", tamanhoArray);
